@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta
+      name="description"
+      content="Portafolio creativo: dibujos, videojuegos y aplicaciones en desarrollo."
+    >
+    <title>Tu nombre — Portafolio creativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Ir al inicio">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>tu nombre<span class="wordmark-dot">.</span></span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Abrir menú"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#dibujos">Dibujos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a class="nav-contact" href="mailto:hola@tucorreo.com">
+          Hablemos <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-wrap" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Portafolio creativo · 2026</p>
+          <h1>Ideas que<br>se vuelven <span>cosas.</span></h1>
+          <p class="hero-intro">
+            Dibujo mundos, diseño experiencias y construyo proyectos digitales.
+            Este es mi pequeño rincón en internet.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#dibujos">Ver mis dibujos <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line" aria-hidden="true"></span>
+            <span>Un trabajo en progreso, igual que yo.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Composición ilustrada de ejemplo">
+          <div class="hero-art-label">UN POCO DE TODO <span>✳</span></div>
+          <svg class="hero-orbit" viewBox="0 0 520 520" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title">Ilustración decorativa de formas y colores</title>
+            <circle cx="260" cy="260" r="205" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 8"/>
+            <circle cx="260" cy="260" r="151" fill="#e99a7c"/>
+            <path d="M259 109c83 0 151 68 151 151s-68 151-151 151S108 343 108 260s68-151 151-151Z" fill="#d9e3b2"/>
+            <path d="M259 109c83 0 151 68 151 151 0 38-14 73-38 100L158 147c27-24 62-38 101-38Z" fill="#e99a7c"/>
+            <path d="M154 152c28-27 65-43 105-43v151L154 152Z" fill="#252922"/>
+            <circle cx="259" cy="260" r="53" fill="#f5f1e8"/>
+            <path d="M235 261c11-18 37-18 48 0-11 18-37 18-48 0Z" fill="#252922"/>
+            <circle cx="259" cy="260" r="7" fill="#e99a7c"/>
+            <path d="m407 98 7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2 7-15Z" fill="#252922"/>
+            <path d="m104 357 6 13 14 2-10 10 2 14-12-7-12 7 2-14-10-10 14-2 6-13Z" fill="#d78768"/>
+            <circle cx="397" cy="365" r="9" fill="#d78768"/>
+          </svg>
+          <span class="art-caption">CREAR · PROBAR · REPETIR</span>
+          <span class="hero-sticker" aria-hidden="true">hecho<br>con curiosidad</span>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 / 03</div>
+      </section>
+
+      <section class="intro-band" id="sobre-mi">
+        <div class="section-wrap intro-grid">
+          <p class="eyebrow">01 — Un poco sobre mí</p>
+          <div>
+            <h2>Hola, soy <span class="editable">tu nombre</span>.</h2>
+            <p class="intro-text">
+              Me gusta explorar ideas y darles forma: a veces empiezan en una
+              libreta, otras en una pantalla. Aquí encontrarás una selección
+              de dibujos y proyectos que estoy creando.
+            </p>
+          </div>
+          <span class="intro-spark" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="work-section section-wrap" id="dibujos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 — Cuaderno visual</p>
+            <h2>Un mundo <span>en trazos.</span></h2>
+          </div>
+          <a class="text-link section-link" href="mailto:hola@tucorreo.com?subject=Quiero%20ver%20tus%20dibujos">
+            Más dibujos <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="art-grid">
+          <article class="art-card art-card-tall">
+            <div class="art-image art-image-one" role="img" aria-label="Ilustración de muestra con una flor coral">
+              <span class="sample-label">ILUSTRACIÓN DE MUESTRA</span>
+              <svg viewBox="0 0 400 460" aria-hidden="true">
+                <path d="M200 399c-1-79 4-142 3-213" fill="none" stroke="#28312c" stroke-width="7" stroke-linecap="round"/>
+                <path d="M202 294c-48-45-83-24-77 11 5 29 44 31 77-11Z" fill="#a5b789" stroke="#28312c" stroke-width="5"/>
+                <path d="M204 338c48-46 78-26 72 7-5 29-40 31-72-7Z" fill="#a5b789" stroke="#28312c" stroke-width="5"/>
+                <g transform="translate(203 167)">
+                  <ellipse cy="-58" rx="33" ry="57" fill="#dc8068" stroke="#28312c" stroke-width="5"/>
+                  <ellipse cy="-58" rx="33" ry="57" fill="#dc8068" stroke="#28312c" stroke-width="5" transform="rotate(60)"/>
+                  <ellipse cy="-58" rx="33" ry="57" fill="#dc8068" stroke="#28312c" stroke-width="5" transform="rotate(120)"/>
+                  <circle r="31" fill="#e7bc6c" stroke="#28312c" stroke-width="5"/>
+                  <circle cx="-10" cy="-2" r="3" fill="#28312c"/><circle cx="10" cy="-2" r="3" fill="#28312c"/>
+                  <path d="M-8 9q8 8 16 0" fill="none" stroke="#28312c" stroke-width="3" stroke-linecap="round"/>
+                </g>
+                <path d="M84 99c19-20 35-20 53 0M279 87c16-16 31-16 47 0" fill="none" stroke="#28312c" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="104" cy="127" r="5" fill="#dc8068"/><circle cx="306" cy="118" r="5" fill="#dc8068"/>
+              </svg>
+              <span class="image-number">01</span>
+            </div>
+            <div class="art-card-caption">
+              <h3>Dibujo 01 — reemplaza el título</h3>
+              <p>Ilustración · año</p>
+            </div>
+          </article>
+
+          <article class="art-card art-card-offset">
+            <div class="art-image art-image-two" role="img" aria-label="Ilustración de muestra de un paisaje">
+              <span class="sample-label">ILUSTRACIÓN DE MUESTRA</span>
+              <svg viewBox="0 0 400 360" aria-hidden="true">
+                <circle cx="275" cy="96" r="49" fill="#e9b96d"/>
+                <path d="M0 238 96 114l102 124H0Z" fill="#768a6c"/>
+                <path d="m95 239 122-160 131 160H95Z" fill="#465f54"/>
+                <path d="m216 79 25 31-26-10-22 13 23-34Z" fill="#f5f1e8"/>
+                <path d="M0 238c72-42 129-40 191 0s123 42 209 0v122H0V238Z" fill="#d8a873"/>
+                <path d="M0 292c75-27 126-13 201 12 70 23 126 21 199-6" fill="none" stroke="#f5f1e8" stroke-width="6" opacity=".8"/>
+                <path d="M82 220v-39m-9 12 9-12 9 12m-9 16-9-12m9 12 10-12" fill="none" stroke="#28312c" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+              <span class="image-number">02</span>
+            </div>
+            <div class="art-card-caption">
+              <h3>Dibujo 02 — reemplaza el título</h3>
+              <p>Estudio de color · año</p>
+            </div>
+          </article>
+
+          <article class="art-card">
+            <div class="art-image art-image-three" role="img" aria-label="Ilustración de muestra de un personaje">
+              <span class="sample-label">ILUSTRACIÓN DE MUESTRA</span>
+              <svg viewBox="0 0 400 360" aria-hidden="true">
+                <path d="M114 281c-28-67-11-151 40-181 44-27 98-8 117 36 24 55 18 105-3 149-39 19-112 22-154-4Z" fill="#e7b66b" stroke="#28312c" stroke-width="6"/>
+                <path d="M144 140c2-56 58-82 105-47 20 15 27 38 25 61-28-19-76-28-130-14Z" fill="#343a32" stroke="#28312c" stroke-width="6"/>
+                <circle cx="168" cy="199" r="7" fill="#28312c"/><circle cx="226" cy="199" r="7" fill="#28312c"/>
+                <path d="M183 223q15 15 30 0" fill="none" stroke="#28312c" stroke-width="5" stroke-linecap="round"/>
+                <path d="m129 154-26-28m158 4 25-27" fill="none" stroke="#28312c" stroke-width="6" stroke-linecap="round"/>
+                <path d="M75 299c24-14 43-14 67 0m118-1c23-14 43-14 66 0" fill="none" stroke="#be7764" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="89" cy="88" r="8" fill="#be7764"/><circle cx="315" cy="221" r="10" fill="#be7764"/>
+                <path d="m306 87 7 14 15 2-11 11 3 15-14-7-13 7 2-15-10-11 14-2 7-14Z" fill="#e7b66b"/>
+              </svg>
+              <span class="image-number">03</span>
+            </div>
+            <div class="art-card-caption">
+              <h3>Dibujo 03 — reemplaza el título</h3>
+              <p>Personaje · año</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="proyectos">
+        <div class="section-wrap">
+          <div class="section-heading project-heading">
+            <div>
+              <p class="eyebrow">03 — En construcción</p>
+              <h2>Pequeñas ideas,<br><span>grandes universos.</span></h2>
+            </div>
+            <p class="heading-aside">Proyectos que nacen de la curiosidad<br>y crecen con cada versión.</p>
+          </div>
+          <div class="project-list">
+            <article class="project-card game-card">
+              <div class="project-visual game-visual" aria-hidden="true">
+                <span class="project-kicker">PROYECTO 001</span>
+                <div class="game-sun"></div><div class="game-moon"></div>
+                <div class="game-mountain mountain-back"></div>
+                <div class="game-mountain mountain-front"></div>
+                <span class="game-planet">✳</span>
+                <span class="game-visual-caption">TU JUEGO<br>AQUÍ</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-line"><span class="project-type">VIDEOJUEGO</span><span class="project-status">En desarrollo</span></div>
+                <h3>El título de tu videojuego</h3>
+                <p>Cuenta aquí de qué trata tu juego, qué lo hace especial y en qué etapa está.</p>
+                <a class="project-link" href="mailto:hola@tucorreo.com?subject=Tu%20videojuego">Próximamente <span aria-hidden="true">↗</span></a>
+              </div>
+              <span class="project-number" aria-hidden="true">01</span>
+            </article>
+            <article class="project-card app-card">
+              <div class="project-visual app-visual" aria-hidden="true">
+                <span class="project-kicker">PROYECTO 002</span>
+                <div class="phone-mock">
+                  <div class="phone-speaker"></div>
+                  <div class="phone-screen">
+                    <span class="app-spark">✳</span>
+                    <span class="app-screen-title">tu app</span>
+                    <span class="app-screen-subtitle">una idea en marcha</span>
+                    <div class="app-ui-line"></div><div class="app-ui-line short"></div>
+                    <div class="app-ui-button"></div>
+                  </div>
+                </div>
+                <span class="app-visual-caption">TU APP<br>AQUÍ</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-line"><span class="project-type">APLICACIÓN MÓVIL</span><span class="project-status">En desarrollo</span></div>
+                <h3>El nombre de tu aplicación</h3>
+                <p>Describe el problema que resuelve tu app y para quién la estás creando.</p>
+                <a class="project-link" href="mailto:hola@tucorreo.com?subject=Tu%20aplicaci%C3%B3n">Próximamente <span aria-hidden="true">↗</span></a>
+              </div>
+              <span class="project-number" aria-hidden="true">02</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contacto">
+        <p class="eyebrow">04 — ¿Creamos algo?</p>
+        <h2>Las buenas ideas<br>empiezan con un <span>hola.</span></h2>
+        <a class="button button-light" href="mailto:hola@tucorreo.com">Escríbeme <span aria-hidden="true">↗</span></a>
+        <span class="contact-star" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#inicio">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>tu nombre<span class="wordmark-dot">.</span></span>
+      </a>
+      <p>Hecho con curiosidad <span aria-hidden="true">✳</span> <span id="current-year">2026</span></p>
+      <a class="back-to-top" href="#inicio">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>

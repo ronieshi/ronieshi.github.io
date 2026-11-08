@@ -5,6 +5,7 @@ Sitio estático para publicar dibujos, un videojuego y una aplicación móvil co
 ## Personalizar el contenido
 
 - El retrato de `assets/ronieshi-icon.png` también se usa como favicon e imagen para compartir. Sustituye el archivo para actualizar esos usos.
+- La tarjeta de WR Draft Assistant usa `assets/wr-draft-icon.png` como icono y `assets/wr-draft-champions.png`, `assets/wr-draft-counterpicks.png` y `assets/wr-draft-builds.png` como capturas. Cada captura se puede abrir en tamaño completo al seleccionarla.
 - En `index.html`, personaliza los títulos y descripciones de muestra, en especial la tarjeta del videojuego.
 - Los enlaces de perfil de Bluesky y GitHub están en la sección “Sobre mí” y en el cierre. Añade otras redes cuando tengas sus direcciones confirmadas.
 - La tarjeta de WR Draft Assistant enlaza al repositorio y a la descarga directa del APK de su release v1.0.0.

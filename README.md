@@ -7,7 +7,8 @@ Sitio estático para publicar dibujos, un videojuego y una aplicación móvil co
 - En `index.html`, reemplaza `tu nombre`, `hola@tucorreo.com`, los títulos de muestra y las descripciones por tus datos.
 - La galería incluye ilustraciones SVG de muestra en el propio HTML. Sustituye cada `<svg>` por una imagen tuya, actualiza su texto alternativo y conserva o cambia el estilo de la tarjeta en `styles.css`.
 - Reemplaza los gráficos de muestra de los proyectos con capturas o ilustraciones cuando estén disponibles.
-- Ajusta colores, tipografía y distribución en `styles.css`. El menú móvil y el año del pie de página están en `script.js`.
+- La paleta cálida vive en las variables `--paper`, `--paper-deep`, `--ink`, `--coral`, `--gold` y `--rust` al inicio de `styles.css`; cambia esos valores para ajustar el ambiente sin rehacer los componentes.
+- Ajusta tipografía y distribución en `styles.css`. El menú móvil y el año del pie de página están en `script.js`.
 
 ## Publicar en GitHub Pages
 

@@ -102,11 +102,13 @@ function renderDrawings() {
         return;
       }
 
-      image.remove();
-      const unavailable = document.createElement("span");
-      unavailable.className = "art-image-fallback";
-      unavailable.textContent = "La imagen aún no está disponible. Vuelve a cargar la galería en unos segundos.";
-      imageLink.append(unavailable);
+      card.remove();
+      if (gallery && !gallery.querySelector(".art-card")) {
+        const empty = document.createElement("p");
+        empty.className = "gallery-status";
+        empty.textContent = "No hay dibujos disponibles en este momento.";
+        gallery.replaceChildren(empty);
+      }
     });
     imageLink.append(image);
 

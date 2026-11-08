@@ -4,7 +4,10 @@ Sitio estático para publicar dibujos, un videojuego y una aplicación móvil co
 
 ## Personalizar el contenido
 
-- En `index.html`, reemplaza `tu nombre`, `hola@tucorreo.com`, los títulos de muestra y las descripciones por tus datos.
+- El retrato de `assets/ronieshi-icon.png` también se usa como favicon e imagen para compartir. Sustituye el archivo para actualizar esos usos.
+- En `index.html`, personaliza los títulos y descripciones de muestra, en especial la tarjeta del videojuego.
+- Los enlaces de perfil de Bluesky y GitHub están en la sección “Sobre mí” y en el cierre. Añade otras redes cuando tengas sus direcciones confirmadas.
+- La tarjeta de WR Draft Assistant enlaza al repositorio y a la descarga directa del APK de su release v1.0.0.
 - La galería incluye ilustraciones SVG de muestra en el propio HTML. Sustituye cada `<svg>` por una imagen tuya, actualiza su texto alternativo y conserva o cambia el estilo de la tarjeta en `styles.css`.
 - Reemplaza los gráficos de muestra de los proyectos con capturas o ilustraciones cuando estén disponibles.
 - La paleta cálida vive en las variables `--paper`, `--paper-deep`, `--ink`, `--coral`, `--gold` y `--rust` al inicio de `styles.css`; cambia esos valores para ajustar el ambiente sin rehacer los componentes.

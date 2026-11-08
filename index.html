@@ -6,9 +6,16 @@
     <meta name="theme-color" content="#fff7e8">
     <meta
       name="description"
-      content="Portafolio creativo: dibujos, videojuegos y aplicaciones en desarrollo."
+      content="Dibujos, historias y proyectos de Ronieshi, artista, escritor y guitarrista."
     >
-    <title>Tu nombre — Portafolio creativo</title>
+    <meta property="og:title" content="Ronieshi — Dibujos y proyectos">
+    <meta property="og:description" content="Dibujos, historias y proyectos de Ronieshi, artista, escritor y guitarrista.">
+    <meta property="og:image" content="https://ronieshi.github.io/assets/ronieshi-icon.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" href="assets/ronieshi-icon.png">
+    <link rel="apple-touch-icon" href="assets/ronieshi-icon.png">
+    <title>Ronieshi — Portafolio creativo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +29,8 @@
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <a class="wordmark" href="#inicio" aria-label="Ir al inicio">
-        <span class="wordmark-mark" aria-hidden="true">✳</span>
-        <span>tu nombre<span class="wordmark-dot">.</span></span>
+        <img class="wordmark-mark" src="assets/ronieshi-icon.png" alt="">
+        <span>ronieshi<span class="wordmark-dot">.</span></span>
       </a>
       <button
         class="menu-toggle"
@@ -38,7 +45,7 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#dibujos">Dibujos</a>
         <a href="#proyectos">Proyectos</a>
-        <a class="nav-contact" href="mailto:hola@tucorreo.com">
+        <a class="nav-contact" href="#contacto">
           Hablemos <span aria-hidden="true">↗</span>
         </a>
       </nav>
@@ -47,11 +54,11 @@
     <main id="contenido">
       <section class="hero section-wrap" id="inicio">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Portafolio creativo · 2026</p>
-          <h1>Ideas que<br>se vuelven <span>cosas.</span></h1>
+          <p class="eyebrow"><span class="status-dot"></span> Artista · escritor · guitarrista</p>
+          <h1>Hola, soy<br><span>Ronieshi.</span></h1>
           <p class="hero-intro">
-            Dibujo mundos, diseño experiencias y construyo proyectos digitales.
-            Este es mi pequeño rincón en internet.
+            Creo dibujos, historias y proyectos digitales. Este es mi rincón
+            para compartir lo que hago y lo que estoy construyendo.
           </p>
           <div class="hero-actions">
             <a class="button button-dark" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
@@ -63,24 +70,11 @@
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Composición ilustrada de ejemplo">
-          <div class="hero-art-label">UN POCO DE TODO <span>✳</span></div>
-          <svg class="hero-orbit" viewBox="0 0 520 520" role="img" aria-labelledby="hero-art-title">
-            <title id="hero-art-title">Ilustración decorativa de formas y colores</title>
-            <circle cx="260" cy="260" r="205" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 8"/>
-            <circle cx="260" cy="260" r="151" fill="#df7139"/>
-            <path d="M259 109c83 0 151 68 151 151s-68 151-151 151S108 343 108 260s68-151 151-151Z" fill="#f1be4b"/>
-            <path d="M259 109c83 0 151 68 151 151 0 38-14 73-38 100L158 147c27-24 62-38 101-38Z" fill="#df7139"/>
-            <path d="M154 152c28-27 65-43 105-43v151L154 152Z" fill="#38261c"/>
-            <circle cx="259" cy="260" r="53" fill="#fff7e8"/>
-            <path d="M235 261c11-18 37-18 48 0-11 18-37 18-48 0Z" fill="#38261c"/>
-            <circle cx="259" cy="260" r="7" fill="#df7139"/>
-            <path d="m407 98 7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2 7-15Z" fill="#38261c"/>
-            <path d="m104 357 6 13 14 2-10 10 2 14-12-7-12 7 2-14-10-10 14-2 6-13Z" fill="#ad4f30"/>
-            <circle cx="397" cy="365" r="9" fill="#ad4f30"/>
-          </svg>
+        <div class="hero-art" aria-label="Retrato ilustrado de Ronieshi">
+          <div class="hero-art-label">DIBUJO · IDEAS · PROYECTOS <span>✳</span></div>
+          <img class="hero-portrait" src="assets/ronieshi-icon.png" alt="Ilustración de perfil de Ronieshi">
           <span class="art-caption">CREAR · PROBAR · REPETIR</span>
-          <span class="hero-sticker" aria-hidden="true">hecho<br>con curiosidad</span>
+          <span class="hero-sticker" aria-hidden="true">arte<br>con identidad</span>
         </div>
         <div class="hero-index" aria-hidden="true">01 / 03</div>
       </section>
@@ -89,12 +83,16 @@
         <div class="section-wrap intro-grid">
           <p class="eyebrow">01 — Un poco sobre mí</p>
           <div>
-            <h2>Hola, soy <span class="editable">tu nombre</span>.</h2>
+            <h2>Un poco <span class="editable">sobre mí.</span></h2>
             <p class="intro-text">
-              Me gusta explorar ideas y darles forma: a veces empiezan en una
-              libreta, otras en una pantalla. Aquí encontrarás una selección
-              de dibujos y proyectos que estoy creando.
+              Soy artista, escritor y guitarrista. Comparto ilustraciones,
+              historias y proyectos independientes, desde una app para
+              <em>Wild Rift</em> hasta ideas que siguen tomando forma.
             </p>
+            <div class="profile-links" aria-label="Perfiles oficiales">
+              <a href="https://bsky.app/profile/ronieshi.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/ronieshi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
           <span class="intro-spark" aria-hidden="true">✳</span>
         </div>
@@ -106,8 +104,8 @@
             <p class="eyebrow">02 — Cuaderno visual</p>
             <h2>Un mundo <span>en trazos.</span></h2>
           </div>
-          <a class="text-link section-link" href="mailto:hola@tucorreo.com?subject=Quiero%20ver%20tus%20dibujos">
-            Más dibujos <span aria-hidden="true">↗</span>
+          <a class="text-link section-link" href="https://bsky.app/profile/ronieshi.bsky.social" target="_blank" rel="noopener noreferrer">
+            Sigue mis dibujos <span aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -202,9 +200,9 @@
               </div>
               <div class="project-info">
                 <div class="project-title-line"><span class="project-type">VIDEOJUEGO</span><span class="project-status">En desarrollo</span></div>
-                <h3>El título de tu videojuego</h3>
-                <p>Cuenta aquí de qué trata tu juego, qué lo hace especial y en qué etapa está.</p>
-                <a class="project-link" href="mailto:hola@tucorreo.com?subject=Tu%20videojuego">Próximamente <span aria-hidden="true">↗</span></a>
+                <h3>Videojuego en desarrollo</h3>
+                <p>Un proyecto de juego que sigue tomando forma. Compartiré avances y detalles a medida que lo desarrolle.</p>
+                <a class="project-link" href="https://bsky.app/profile/ronieshi.bsky.social" target="_blank" rel="noopener noreferrer">Ver novedades <span aria-hidden="true">↗</span></a>
               </div>
               <span class="project-number" aria-hidden="true">01</span>
             </article>
@@ -215,8 +213,8 @@
                   <div class="phone-speaker"></div>
                   <div class="phone-screen">
                     <span class="app-spark">✳</span>
-                    <span class="app-screen-title">tu app</span>
-                    <span class="app-screen-subtitle">una idea en marcha</span>
+                    <span class="app-screen-title">WR Draft</span>
+                    <span class="app-screen-subtitle">Assistant · Wild Rift</span>
                     <div class="app-ui-line"></div><div class="app-ui-line short"></div>
                     <div class="app-ui-button"></div>
                   </div>
@@ -224,10 +222,14 @@
                 <span class="app-visual-caption">TU APP<br>AQUÍ</span>
               </div>
               <div class="project-info">
-                <div class="project-title-line"><span class="project-type">APLICACIÓN MÓVIL</span><span class="project-status">En desarrollo</span></div>
-                <h3>El nombre de tu aplicación</h3>
-                <p>Describe el problema que resuelve tu app y para quién la estás creando.</p>
-                <a class="project-link" href="mailto:hola@tucorreo.com?subject=Tu%20aplicaci%C3%B3n">Próximamente <span aria-hidden="true">↗</span></a>
+                <div class="project-title-line"><span class="project-type">APLICACIÓN MÓVIL</span><span class="project-status">v1.0.0 · Disponible</span></div>
+                <h3>WR Draft Assistant</h3>
+                <p>Consulta builds, counterpicks y sinergias de campeones de Wild Rift antes o durante la fase de selección. La burbuja superpuesta permite tener la guía a mano mientras juegas.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/ronieshi/WR-Draft-Assistant/releases/download/v1.0.0/WR.Draft.Assistant.apk">Descargar APK <span aria-hidden="true">↓</span></a>
+                  <a class="project-link project-link-secondary" href="https://github.com/ronieshi/WR-Draft-Assistant" target="_blank" rel="noopener noreferrer">Ver proyecto <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="project-note">La burbuja necesita permiso de superposición para mostrarse durante el juego.</p>
               </div>
               <span class="project-number" aria-hidden="true">02</span>
             </article>
@@ -238,15 +240,18 @@
       <section class="contact-section section-wrap" id="contacto">
         <p class="eyebrow">04 — ¿Creamos algo?</p>
         <h2>Las buenas ideas<br>empiezan con un <span>hola.</span></h2>
-        <a class="button button-light" href="mailto:hola@tucorreo.com">Escríbeme <span aria-hidden="true">↗</span></a>
+        <div class="contact-links">
+          <a class="button button-light" href="https://bsky.app/profile/ronieshi.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="https://github.com/ronieshi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
         <span class="contact-star" aria-hidden="true">✳</span>
       </section>
     </main>
 
     <footer class="site-footer">
       <a class="wordmark footer-wordmark" href="#inicio">
-        <span class="wordmark-mark" aria-hidden="true">✳</span>
-        <span>tu nombre<span class="wordmark-dot">.</span></span>
+        <img class="wordmark-mark" src="assets/ronieshi-icon.png" alt="">
+        <span>ronieshi<span class="wordmark-dot">.</span></span>
       </a>
       <p>Hecho con curiosidad <span aria-hidden="true">✳</span> <span id="current-year">2026</span></p>
       <a class="back-to-top" href="#inicio">Volver arriba ↑</a>

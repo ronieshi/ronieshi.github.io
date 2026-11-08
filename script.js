@@ -21,6 +21,7 @@ if (year) year.textContent = String(new Date().getFullYear());
 
 const repository = "ronieshi/ronieshi.github.io";
 const manifestPath = "drawings.json";
+const rawRepositoryUrl = `https://raw.githubusercontent.com/${repository}/main`;
 const gallery = document.querySelector("#drawing-gallery");
 const uploadForm = document.querySelector("#drawing-form");
 const uploadStatus = document.querySelector("#upload-status");
@@ -30,6 +31,10 @@ const categoryInput = document.querySelector("#drawing-category");
 const maxFileSize = 8 * 1024 * 1024;
 const allowedTypes = new Set(["image/png", "image/jpeg", "image/webp", "image/gif"]);
 let drawings = [];
+
+function drawingAssetUrl(path) {
+  return `${rawRepositoryUrl}/${path.split("/").map(encodeURIComponent).join("/")}`;
+}
 
 function setUploadStatus(message, state = "") {
   if (!uploadStatus) return;
@@ -77,15 +82,32 @@ function renderDrawings() {
 
     const imageLink = document.createElement("a");
     imageLink.className = "art-image";
-    imageLink.href = drawing.path;
+    const imageUrl = drawingAssetUrl(drawing.path);
+    imageLink.href = imageUrl;
     imageLink.target = "_blank";
     imageLink.rel = "noopener noreferrer";
     imageLink.setAttribute("aria-label", `Abrir dibujo: ${drawing.title || "Dibujo"}`);
 
     const image = document.createElement("img");
-    image.src = drawing.path;
+    image.src = `${imageUrl}?v=${encodeURIComponent(drawing.uploadedAt || Date.now())}`;
     image.alt = drawing.title || "Dibujo de Ronieshi";
     image.loading = "lazy";
+    let imageRetries = 0;
+    image.addEventListener("error", () => {
+      if (imageRetries < 5) {
+        imageRetries += 1;
+        window.setTimeout(() => {
+          image.src = `${imageUrl}?v=${Date.now()}`;
+        }, imageRetries * 1000);
+        return;
+      }
+
+      image.remove();
+      const unavailable = document.createElement("span");
+      unavailable.className = "art-image-fallback";
+      unavailable.textContent = "La imagen aún no está disponible. Vuelve a cargar la galería en unos segundos.";
+      imageLink.append(unavailable);
+    });
     imageLink.append(image);
 
     const caption = document.createElement("div");
@@ -115,7 +137,9 @@ async function loadDrawings() {
   if (!gallery) return;
 
   try {
-    const response = await fetch(manifestPath, { cache: "no-store" });
+    const response = await fetch(`${rawRepositoryUrl}/${manifestPath}?v=${Date.now()}`, {
+      cache: "no-store",
+    });
     if (!response.ok) throw new Error(`No se pudo cargar la galería (${response.status}).`);
     const manifest = await response.json();
     drawings = Array.isArray(manifest) ? manifest : [];

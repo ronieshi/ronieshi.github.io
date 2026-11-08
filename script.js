@@ -337,3 +337,4 @@ uploadForm?.addEventListener("submit", async (event) => {
 });
 
 loadDrawings();
+if (gallery) window.addEventListener("focus", loadDrawings);

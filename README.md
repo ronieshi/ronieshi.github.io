@@ -17,7 +17,7 @@ Sitio estático para publicar dibujos, un videojuego y una aplicación móvil co
 
 ## Publicar dibujos desde la página
 
-La sección **Subir dibujos** crea commits directamente en `main`. La galería lee el manifiesto y las imágenes desde GitHub, evitando mostrar una copia antigua mientras se actualiza la caché del sitio:
+El botón redondo con **+** en la barra superior abre el formulario de carga en otra pestaña. Este crea commits directamente en `main`. La galería lee el manifiesto y las imágenes desde GitHub, evitando mostrar una copia antigua mientras se actualiza la caché del sitio:
 
 1. Crea un [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) con acceso únicamente al repositorio `ronieshi/ronieshi.github.io`, permiso **Contents: Read and write** y una fecha de vencimiento.
 2. En la página, pega el token, selecciona una categoría y una o varias imágenes PNG, JPG, WebP o GIF de hasta 8 MB cada una.

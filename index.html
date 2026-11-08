@@ -45,6 +45,14 @@
         <a href="#dibujos">Dibujos</a>
         <a href="#proyectos">Proyectos</a>
       </nav>
+      <a
+        class="upload-trigger"
+        href="subir.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Subir dibujos en una pestaña nueva"
+        title="Subir dibujos"
+      >+</a>
     </header>
 
     <main id="contenido">
@@ -84,48 +92,6 @@
           </a>
         </div>
 
-        <details class="drawing-manager">
-          <summary><span class="manager-plus" aria-hidden="true">+</span> Subir dibujos</summary>
-          <div class="manager-content">
-            <p class="manager-intro">Las imágenes se guardarán en este sitio y se ordenarán de la más reciente a la más antigua.</p>
-            <ol class="token-steps">
-              <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Crea un fine-grained token en GitHub</a> con acceso sólo al repositorio <code>ronieshi.github.io</code>.</li>
-              <li>En permisos del repositorio, selecciona <strong>Contents: Read and write</strong>. Ponle vencimiento y no compartas el token.</li>
-              <li>El permiso permite modificar el contenido del repositorio, no sólo dibujos. Pégalo aquí al publicar; se borra al terminar y no se guarda en el sitio.</li>
-            </ol>
-            <form class="drawing-form" id="drawing-form">
-              <label class="field-label" for="github-token">Token de GitHub</label>
-              <input
-                id="github-token"
-                name="token"
-                type="password"
-                autocomplete="off"
-                spellcheck="false"
-                placeholder="github_pat_..."
-                required
-              >
-              <label class="field-label" for="drawing-files">Selecciona tus dibujos</label>
-              <input
-                id="drawing-files"
-                name="drawings"
-                type="file"
-                accept="image/png,image/jpeg,image/webp,image/gif"
-                multiple
-                required
-              >
-              <label class="field-label" for="drawing-category">Categoría</label>
-              <select id="drawing-category" name="category">
-                <option>Ilustración</option>
-                <option>Boceto</option>
-                <option>Personaje</option>
-                <option>Estudio</option>
-              </select>
-              <p class="upload-hint">PNG, JPG, WebP o GIF · hasta 8 MB por imagen. El nombre del archivo será el título.</p>
-              <button class="button button-dark upload-button" type="submit">Publicar dibujos <span aria-hidden="true">↑</span></button>
-              <p class="upload-status" id="upload-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-        </details>
         <div class="art-grid" id="drawing-gallery" aria-live="polite">
           <p class="gallery-status">Cargando dibujos…</p>
         </div>

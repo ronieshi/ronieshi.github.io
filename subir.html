@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff7e8">
+    <meta name="robots" content="noindex">
+    <title>Subir dibujos — Ronieshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header upload-page-header">
+      <a class="wordmark" href="index.html" aria-label="Volver al portafolio">
+        <img class="wordmark-mark" src="assets/ronieshi-icon.png" alt="">
+        <span>ronieshi<span class="wordmark-dot">.</span></span>
+      </a>
+      <a class="upload-page-back" href="index.html">Volver al portafolio <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="upload-page section-wrap" id="contenido">
+      <p class="eyebrow"><span class="status-dot"></span> Galería personal</p>
+      <h1>Subir <span>dibujos.</span></h1>
+      <p class="upload-page-intro">Añade tus imágenes a la galería. Se guardarán en el repositorio y aparecerán primero las más recientes.</p>
+
+      <section class="upload-panel" aria-label="Formulario para publicar dibujos">
+        <ol class="token-steps">
+          <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Crea un fine-grained token en GitHub</a> con acceso sólo al repositorio <code>ronieshi.github.io</code>.</li>
+          <li>En permisos del repositorio, selecciona <strong>Contents: Read and write</strong>. Ponle vencimiento y no compartas el token.</li>
+          <li>El permiso permite modificar el contenido del repositorio, no sólo dibujos. Pégalo aquí al publicar; se borra al terminar y no se guarda en el sitio.</li>
+        </ol>
+        <form class="drawing-form" id="drawing-form">
+          <label class="field-label" for="github-token">Token de GitHub</label>
+          <input
+            id="github-token"
+            name="token"
+            type="password"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="github_pat_..."
+            required
+          >
+          <label class="field-label" for="drawing-files">Selecciona tus dibujos</label>
+          <input
+            id="drawing-files"
+            name="drawings"
+            type="file"
+            accept="image/png,image/jpeg,image/webp,image/gif"
+            multiple
+            required
+          >
+          <label class="field-label" for="drawing-category">Categoría</label>
+          <select id="drawing-category" name="category">
+            <option>Ilustración</option>
+            <option>Boceto</option>
+            <option>Personaje</option>
+            <option>Estudio</option>
+          </select>
+          <p class="upload-hint">PNG, JPG, WebP o GIF · hasta 8 MB por imagen. El nombre del archivo será el título.</p>
+          <button class="button button-dark upload-button" type="submit">Publicar dibujos <span aria-hidden="true">↑</span></button>
+          <p class="upload-status" id="upload-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
